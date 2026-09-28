@@ -1,6 +1,3 @@
-# agrupamento-semantico-metadados
-Pipeline para agrupamento semântico e detecção de redundância em metadados corporativos utilizando BERTimbau, UMAP e HDBSCAN.
-
 # Agrupamento Semântico e Detecção de Redundância em Metadados Corporativos
 
 Este repositório contém o código-fonte desenvolvido para um estudo de
@@ -18,9 +15,9 @@ relacionadas em dicionários de dados corporativos.
 O trabalho utiliza Design Science Research (DSR) como metodologia científica
 e CRISP-DM para condução do processo de mineração de dados.
 
-O pipeline principal é composto por:
+## Pipeline
 
-BERTimbau → Embeddings → UMAP → HDBSCAN
+**Metadados → Preparação → BERTimbau → Embeddings (768D) → UMAP (5D) → HDBSCAN → Agrupamentos**
 
 Também são utilizados experimentos baseline baseados em TF-IDF para
 comparação dos resultados.
@@ -47,13 +44,16 @@ institucionais.
 
 ## Estrutura do projeto
 
-O código está organizado de acordo com as etapas do processo de mineração
-de dados:
+O código está organizado de acordo com as etapas do CRISP-DM:
 
+- Fase 1 — Entendimento do Negócio
 - Fase 2 — Entendimento dos Dados
 - Fase 3 — Preparação dos Dados
 - Fase 4 — Modelagem
 - Fase 5 — Avaliação
+
+A Fase 6 — Implantação representa a etapa subsequente do CRISP-DM e não
+integra o escopo experimental apresentado neste repositório.
 
 ## Autor
 
